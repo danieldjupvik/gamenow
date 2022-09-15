@@ -1,0 +1,10 @@
+.preview-img {
+  border-radius: 10px;
+  margin-bottom: $global-spacing * 2;
+}
+
+@media only screen and (min-width: $max-width) {
+  .preview-img {
+    width: 341px;
+  }
+}

@@ -1,0 +1,105 @@
+.signup-logo {
+  width: 50px;
+  margin: 0 auto;
+  margin-top: $global-spacing;
+  display: block;
+}
+
+.signup {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  &__title {
+    color: white;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  &__username {
+    width: 100%;
+    margin-bottom: $global-spacing;
+    &--label {
+      color: white;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+    }
+  }
+  &__email {
+    width: 100%;
+    margin-bottom: $global-spacing;
+    &--label {
+      color: white;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+    }
+  }
+  &__password {
+    width: 100%;
+    margin-bottom: $global-spacing;
+    &--label {
+      color: white;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+    }
+  }
+  &__conf-password {
+    width: 100%;
+    &--label {
+      color: white;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+    }
+  }
+}
+.login-div {
+  text-align: center;
+}
+
+.login-text {
+  color: white;
+  opacity: 0.6;
+  margin-right: 10px;
+}
+.login-button {
+  color: white;
+}
+
+.login-links {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: $max-width) {
+  .signup {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

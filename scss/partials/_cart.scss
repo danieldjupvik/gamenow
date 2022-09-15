@@ -1,0 +1,157 @@
+.cart {
+  color: white;
+  &__btn {
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  &__total-div {
+    color: white;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__img-div {
+    width: 150px;
+    &--image {
+      width: 80px;
+      display: block;
+      border-radius: 10px;
+    }
+    &--title {
+      margin-top: $global-spacing;
+      display: block;
+      line-height: 25px;
+    }
+    &--edition {
+      color: white;
+      font-size: 14px;
+      text-align: left;
+      opacity: 0.7;
+      margin-top: $global-spacing;
+    }
+  }
+  &__info-div {
+    &--delete-btn {
+      color: $red-color;
+      font-size: 30px;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    &--price {
+      width: 80px;
+      margin-right: 0px;
+      display: inline-block;
+    }
+    &--delete-btn:hover {
+      filter: brightness(80%);
+    }
+  }
+}
+
+.subtotal {
+  margin-bottom: $global-spacing;
+}
+
+.empty-cart--continueShopping {
+  margin-top: $global-spacing * 4;
+  margin-bottom: 35vh;
+}
+
+.cart-section {
+  display: none;
+}
+
+.empty-cart {
+  display: none;
+}
+
+.transparent {
+  color: transparent;
+  pointer-events: none;
+}
+
+.cart-buttons-wrapper {
+  margin-top: $global-spacing * 4;
+}
+
+.cart-line {
+  margin-top: $global-spacing * 2;
+  margin-bottom: $global-spacing * 2;
+  border: 1px solid $main-color;
+}
+
+#payment-btn {
+  display: block;
+  margin-top: $global-spacing * 4;
+}
+
+.cartMessage {
+  padding: 0;
+}
+
+.cart-loader {
+  display: flex;
+}
+
+@media only screen and (min-width: $max-width) {
+  .payment-btn {
+    width: 200px;
+    margin-top: $global-spacing * 2 !important;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .continue-btn {
+    width: 200px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .cart-buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: $global-spacing * 3;
+  }
+
+  .cart {
+    &__card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  .cart {
+    &__img-div {
+      width: 350px;
+      &--image {
+        display: inline-block;
+        margin-right: 30px;
+        vertical-align: middle;
+      }
+      &--title {
+        display: inline-block;
+      }
+      &--edition {
+        margin-top: $global-spacing * 2;
+      }
+    }
+    &__info-div {
+      &--price {
+        margin-right: 80px;
+      }
+      &--delete-btn:hover {
+        filter: brightness(80%);
+      }
+    }
+  }
+}

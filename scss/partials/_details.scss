@@ -1,0 +1,59 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  &--title {
+    font-size: 20px;
+    color: white;
+    margin-top: $global-spacing;
+    margin-bottom: $global-spacing * 1.5;
+    font-family: $heading;
+    letter-spacing: 1px;
+  }
+  &--price {
+    font-size: 24px;
+    padding: 0;
+  }
+  &--description {
+    color: white;
+    font-size: 16px;
+    margin-top: $global-spacing;
+    margin-bottom: $global-spacing;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: $light;
+  }
+  &--edition {
+    font-size: 15px;
+    text-align: left;
+    opacity: 0.7;
+    color: white;
+    margin-top: $global-spacing * 1.5;
+    margin-bottom: $global-spacing;
+  }
+  &--img {
+    border-radius: 10px;
+    margin-bottom: $global-spacing;
+  }
+  &__loader {
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (min-width: $max-width) {
+  .details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    justify-content: center;
+    &__image-div {
+      margin-right: 50px;
+    }
+    &__info-div {
+      width: 300px;
+    }
+    &--img {
+      width: 341px;
+    }
+  }
+}

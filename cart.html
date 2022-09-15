@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Game Now</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Game Now" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Buy games online on GAME NOW" />
+    <meta name="description" content="Buy games online on GAME NOW" />
+    <meta
+      property="og:image"
+      content="https://gamenow.danieldjupvik.dev/assets/img/metadata/picture-metadata.jpg"
+    />
+    <meta property="og:url" content="https://gamenow.danieldjupvik.dev/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, For Accessibility  -->
+    <meta property="og:site_name" content="Game Now" />
+    <meta name="twitter:image:alt" content="Picture of game now" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/icons/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/img/icons/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/img/icons/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/assets/img/icons/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/assets/img/icons/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#333333" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="container">
+          <a href="/">
+            <img
+              class="navbar__logo"
+              src="./assets/img/logo/semester-project-2-logo.png"
+              alt="Game Now logo"
+            />
+          </a>
+          <div id="navbar-navigation" class="navbar-navigation"></div>
+          <div class="icon-container">
+            <a href="javascript:void(0);" aria-label="hamburger icon">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </a>
+          </div>
+          <a href="./cart.html">
+            <div class="navbar__cart">
+              <div class="navbar__cart--itemCounter"></div>
+
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h1 class="heading">Cart</h1>
+        <div class="message-container"></div>
+
+        <div class="empty-cart">
+          <div class="empty-cart--message">
+            <div class="message cartMessage">You're cart is empty</div>
+          </div>
+          <div class="empty-cart--continueShopping">
+            <a href="./products.html">
+              <div class="btn">Continue shopping</div>
+            </a>
+          </div>
+        </div>
+        <div class="lds-ripple cart-loader">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="cart-section">
+          <button class="cart__btn btn">Clear cart</button>
+          <div class="cart"></div>
+          <div class="cart__total-div">
+            <div class="cart__card subtotal">
+              <div class="cart__img-div">
+                <span class="">Subtotal</span>
+              </div>
+              <div class="cart__info-div">
+                <div class="cart__info-div--price" id="subtotal">$0</div>
+                <i
+                  class="cart__info-div--delete-btn transparent fas fa-trash"
+                ></i>
+              </div>
+            </div>
+            <div class="cart__card">
+              <div class="cart__img-div">
+                <span class="">Tax - 8%</span>
+              </div>
+              <div class="cart__info-div">
+                <div class="cart__info-div--price" id="tax">$0</div>
+                <i
+                  class="cart__info-div--delete-btn transparent fas fa-trash"
+                ></i>
+              </div>
+            </div>
+            <hr class="cart-line" />
+            <div class="cart__card">
+              <div class="cart__img-div">
+                <span class="">Total</span>
+              </div>
+              <div class="cart__info-div">
+                <div class="cart__info-div--price" id="total">$0</div>
+                <i
+                  class="cart__info-div--delete-btn transparent fas fa-trash"
+                ></i>
+              </div>
+            </div>
+            <div class="cart__card">
+              <div class="cart__img-div">
+                <span class="">In NOK</span>
+              </div>
+              <div class="cart__info-div">
+                <div class="cart__info-div--price" id="currency">0kr</div>
+                <i
+                  class="cart__info-div--delete-btn transparent fas fa-trash"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="cart-buttons-wrapper">
+            <button
+              disabled
+              id="payment-btn"
+              class="btn fullWidthBtn blue-btn payment-btn"
+            >
+              Go to payment
+            </button>
+            <a href="./products.html">
+              <div class="btn fullWidthBtn continue-btn">Continue shopping</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer">
+          <div class="footer__icons">
+            <a class="footer__links" href="https://facebook.com">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a class="footer__links" href="https://twitter.com">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a class="footer__links" href="https://instagram.com">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </div>
+          <span class="footer__copyright"> Copyright &copy; Game Now 2020</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/cart.js" type="module"></script>
+  </body>
+</html>

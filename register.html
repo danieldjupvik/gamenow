@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Game Now</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Game Now" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Buy games online on GAME NOW" />
+    <meta name="description" content="Buy games online on GAME NOW" />
+    <meta
+      property="og:image"
+      content="https://gamenow.danieldjupvik.dev/assets/img/metadata/picture-metadata.jpg"
+    />
+    <meta property="og:url" content="https://gamenow.danieldjupvik.dev/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, For Accessibility  -->
+    <meta property="og:site_name" content="Game Now" />
+    <meta name="twitter:image:alt" content="Picture of game now" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/icons/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/img/icons/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/img/icons/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/assets/img/icons/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/assets/img/icons/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#333333" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <a href="./">
+          <img
+            class="signup-logo"
+            src="./assets/img/logo/semester-project-2-logo.png"
+            alt="Game Now logo"
+          />
+        </a>
+        <form class="signup-form">
+          <div class="signup">
+            <h1 class="signup__title">Create an free account at Game Now</h1>
+            <div class="signup__username">
+              <label class="signup__username--label" for="username"
+                >Username</label
+              >
+              <label class="error__username" for="username"
+                >Username require 2 characters</label
+              >
+              <input
+                class="signup__username--input"
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Username"
+              />
+            </div>
+            <div class="signup__email">
+              <label class="signup__email--label" for="email">Email</label>
+              <label class="error__email" for="email"
+                >Enter a valid email</label
+              >
+              <input
+                class="signup__email--input"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="example@outlook.com"
+              />
+            </div>
+            <div class="signup__password">
+              <label class="signup__password--label" for="password"
+                >Password</label
+              >
+              <label class="error__password" for="password"
+                >Password require 6 characters</label
+              >
+              <input
+                class="signup__password--input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="signup__conf-password">
+              <label class="signup__conf-password--label" for="confirmPassword"
+                >Confirm Password</label
+              >
+              <label class="error__conf-password" for="confirmPassword"
+                >Password require 6 characters</label
+              >
+              <input
+                class="signup__conf-password--input"
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+                placeholder="Password"
+              />
+            </div>
+            <div class="message-container"></div>
+            <button type="submit" class="signup-btn btn">Sign up now</button>
+            <div class="login-div">
+              <small class="login-text"
+                >You already have an Game Now account?</small
+              >
+              <a class="login-link" href="./login.html"
+                ><small class="login-button">Log In</small></a
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./js/register.js" type="module"></script>
+  </body>
+</html>

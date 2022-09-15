@@ -1,0 +1,19 @@
+{
+    "name": "Game Now",
+    "short_name": "Game Now",
+    "icons": [
+        {
+            "src": "/img/icons/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#333333",
+    "background_color": "#333333",
+    "display": "standalone"
+}

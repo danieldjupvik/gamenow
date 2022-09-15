@@ -1,0 +1,161 @@
+.edit {
+  flex-direction: column;
+  &__url {
+    color: white;
+    margin-bottom: $global-spacing;
+    &--label {
+      display: block;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+    }
+  }
+  &__title {
+    color: white;
+    margin-bottom: $global-spacing;
+    &--label {
+      display: block;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+    }
+  }
+  &__price {
+    color: white;
+    margin-bottom: $global-spacing;
+    &--label {
+      display: block;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+    }
+  }
+  &__edition {
+    color: white;
+    margin-bottom: $global-spacing;
+    &--label {
+      display: block;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+    }
+  }
+  &__featuredRanking {
+    color: white;
+    display: none;
+    margin-top: $global-spacing;
+    &--label {
+      display: block;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+    }
+  }
+  &__description {
+    color: white;
+    &--label {
+      display: block;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+      height: 140px;
+    }
+  }
+  &__btn-section {
+    margin-top: $global-spacing * 2;
+  }
+  &__bestseller-btn {
+    display: inline-block;
+    color: white;
+    &--label {
+      font-size: 18px;
+      font-weight: $semibold;
+      margin-bottom: $global-spacing;
+      display: block;
+    }
+  }
+  &__delete-btn {
+    color: white;
+    vertical-align: top;
+    float: right;
+    text-align: center;
+    &--label {
+      font-size: 18px;
+      font-weight: $semibold;
+      margin-bottom: $global-spacing;
+    }
+    &--icon {
+      font-size: 40px;
+      color: $red-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.edit-loader {
+  display: flex;
+}
+
+@media only screen and (min-width: $max-width) {
+  .edit {
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+    justify-content: center;
+    &__image-div {
+      margin-right: 50px;
+    }
+    &__info-div {
+      width: 300px;
+    }
+    &__description {
+      &--input {
+        height: 120px;
+      }
+    }
+    &__delete-btn {
+      &--icon:hover {
+        filter: brightness(80%);
+      }
+    }
+  }
+  .preview-img {
+    margin-bottom: $global-spacing;
+  }
+}

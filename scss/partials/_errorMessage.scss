@@ -1,0 +1,25 @@
+.message {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: $global-spacing;
+  margin-top: $global-spacing * 2;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.error {
+  color: black;
+  background-color: red;
+}
+
+.warning {
+  color: black;
+  background-color: yellow;
+}
+
+.success {
+  background-color: green;
+}

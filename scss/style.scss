@@ -1,0 +1,25 @@
+/* set up */
+@import "variables";
+@import "base";
+
+/* Partials */
+@import "partials/navbar";
+@import "partials/hero";
+@import "partials/heading";
+@import "partials/button";
+@import "partials/products";
+@import "partials/aboutSection";
+@import "partials/footer";
+@import "partials/priceTag";
+@import "partials/loader";
+@import "partials/details";
+@import "partials/search";
+@import "partials/icons";
+@import "partials/login";
+@import "partials/register";
+@import "partials/edit";
+@import "partials/cart";
+@import "partials/profile";
+@import "partials/sortButton";
+@import "partials/errorMessage";
+@import "partials/previewImage";

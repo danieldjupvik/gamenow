@@ -1,0 +1,19 @@
+.hero {
+  width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+@media only screen and (min-width: $max-width) {
+  .hero {
+    background-size: 100% !important;
+  }
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}

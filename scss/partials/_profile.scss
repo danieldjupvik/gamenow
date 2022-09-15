@@ -1,0 +1,90 @@
+.profile-form {
+  color: white;
+  margin-top: $global-spacing * 2;
+  margin-bottom: $global-spacing * 2;
+  &__wrapper {
+    margin-bottom: $global-spacing;
+    &--label {
+      display: block;
+    }
+    &--input {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: $background-color;
+      border: 1px solid $main-color;
+      padding: 10px;
+      color: white;
+    }
+  }
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  &__heading {
+    font-size: 18px;
+    font-family: $heading;
+  }
+}
+
+.deleteUser-container {
+  margin-top: $global-spacing * 3;
+}
+
+.password-form {
+  color: white;
+}
+
+.profile-border {
+  border: none;
+  opacity: 0.7;
+}
+
+.deleteUserBtn {
+  margin-left: 0;
+  font-size: 18px;
+}
+.welcome {
+  display: none;
+}
+
+@media only screen and (min-width: $max-width) {
+  .profile-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 64px;
+    &__heading {
+      margin-bottom: $global-spacing * 1.5;
+      margin-top: 0;
+    }
+  }
+  .profile-div {
+    width: 50%;
+    margin-right: 50px;
+  }
+  .passwordChange-div {
+    width: 350px;
+  }
+
+  .changePwBtn,
+  .updateBtn {
+    width: fit-content;
+    margin-left: 0;
+    font-size: 17px;
+  }
+
+  .profile-form {
+    color: white;
+    margin-top: 0;
+  }
+
+  .deleteUser-container {
+    margin-top: 0;
+  }
+
+  .deleteUserBtn {
+    font-size: 16px;
+  }
+}
